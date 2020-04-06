@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component, Suspense } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Page1 from './components/Page1';
+
+// Part 4 - React.lazy
+const Page2Lazy = React.lazy(() => import('./components/Page2'));
+const Page3Lazy = React.lazy(() => import('./components/Page3'));
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      route: 'page1'
+    }
+  }
+  onRouteChange = (route) => {
+    // No Code Splitting
+    this.setState({ route: route });
+  }
+  render() {
+
+    // React.Lazy
+    if (this.state.route === 'page1') {
+      return <Page1 onRouteChange={this.onRouteChange} />
+    } else if (this.state.route === 'page2') {
+      return (
+        <Suspense fallback={<div>Loading...</div>}>
+          <Page2Lazy onRouteChange={this.onRouteChange} />
+        </Suspense>
+      );
+    } else {
+      return (
+        <Suspense fallback={<div>Loading...</div>}>
+          <Page3Lazy onRouteChange={this.onRouteChange} />
+        </Suspense>
+      );
+    }
+
+  }
 }
 
 export default App;
