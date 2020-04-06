@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/code-splitting-app/static/css/main.92905b29.chunk.css",
+    "main.js": "/code-splitting-app/static/js/main.236006dd.chunk.js",
+    "main.js.map": "/code-splitting-app/static/js/main.236006dd.chunk.js.map",
+    "runtime-main.js": "/code-splitting-app/static/js/runtime-main.f53991e9.js",
+    "runtime-main.js.map": "/code-splitting-app/static/js/runtime-main.f53991e9.js.map",
+    "static/js/2.32edf3d6.chunk.js": "/code-splitting-app/static/js/2.32edf3d6.chunk.js",
+    "static/js/2.32edf3d6.chunk.js.map": "/code-splitting-app/static/js/2.32edf3d6.chunk.js.map",
+    "static/js/3.1deba769.chunk.js": "/code-splitting-app/static/js/3.1deba769.chunk.js",
+    "static/js/3.1deba769.chunk.js.map": "/code-splitting-app/static/js/3.1deba769.chunk.js.map",
+    "static/js/4.d45f6652.chunk.js": "/code-splitting-app/static/js/4.d45f6652.chunk.js",
+    "static/js/4.d45f6652.chunk.js.map": "/code-splitting-app/static/js/4.d45f6652.chunk.js.map",
+    "index.html": "/code-splitting-app/index.html",
+    "precache-manifest.0a1b877324d4532cc2b251819df9d7c1.js": "/code-splitting-app/precache-manifest.0a1b877324d4532cc2b251819df9d7c1.js",
+    "service-worker.js": "/code-splitting-app/service-worker.js",
+    "static/css/main.92905b29.chunk.css.map": "/code-splitting-app/static/css/main.92905b29.chunk.css.map",
+    "static/js/2.32edf3d6.chunk.js.LICENSE.txt": "/code-splitting-app/static/js/2.32edf3d6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/code-splitting-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f53991e9.js",
+    "static/js/2.32edf3d6.chunk.js",
+    "static/css/main.92905b29.chunk.css",
+    "static/js/main.236006dd.chunk.js"
+  ]
+}
